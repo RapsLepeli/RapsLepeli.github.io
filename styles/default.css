@@ -20,6 +20,13 @@ a:hover{
   width: 70%;
   text-align: center;
 }
+.content, .alert {
+  margin:auto;
+  width: 70%;
+  text-align: center;
+  color: red;
+}
+
 .intro_heading{
   text-align: center;
   font-size: 50px;
