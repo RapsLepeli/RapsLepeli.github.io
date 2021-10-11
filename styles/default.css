@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+    border:none;
+    font-family: NavBarFont;
+}
+body{
+  background-color: #131617;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: grey;
+}
+a:hover{
+  color: turquoise;
+}
+.content, .socials {
+  margin:auto;
+  width: 70%;
+  text-align: center;
+}
+.intro_heading{
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 10px;
+}
+.intro_par{
+  font-size: 20px;
+  margin: 20px 10px;
+}
+.intro_footer{
+  font-size: 30px;
+  margin: 20px 10px;
+}
+li{
+  list-style: none;
+}
+
+.socials a{
+  padding: 25px 20px;
+  margin: 20px 10px;
+  color: white;
+
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+footer {
+  position: fixed;
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+footer a{
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  color: #131617;
+  font-size: 20px;
+}
+footer a:hover{
+  color: grey;
+}
+@media screen and (max-width: 600px) {
+  .intro_heading{
+    font-size: 40px;
+  }
+  .intro_par{
+    font-size: 18px;
+  }
+  .intro_footer{
+    font-size: 27px;
+  }
+
+}
+@media screen and (max-width: 435px) {
+  .intro_heading{
+    font-size: 30px;
+  }
+  .intro_par{
+    font-size: 16px;
+  }
+  .intro_footer{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .intro_heading{
+    font-size: 20px;
+  }
+  .intro_par{
+    font-size: 14px;
+  }
+  .intro_footer{
+    font-size: 21px;
+  }
+}
+
+@font-face {
+  font-family: NavBarFont;
+  src: url("../fonts/Dosis-SemiBold.ttf");
+}
