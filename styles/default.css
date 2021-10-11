@@ -20,9 +20,10 @@ a:hover{
   width: 70%;
   text-align: center;
 }
-.content, .alert {
+.alert {
   margin:auto;
   width: 70%;
+  font-size: 50px;
   text-align: center;
   color: red;
 }
