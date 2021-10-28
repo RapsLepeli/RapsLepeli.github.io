@@ -1,4 +1,4 @@
-user = 'tik9'
+user = 'RapelangLepeli'
         apirepo = `https://api.github.com/users/${user}`
         
    listrepos = document.createElement('ul')
