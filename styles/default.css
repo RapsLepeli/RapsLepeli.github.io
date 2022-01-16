@@ -116,7 +116,8 @@ footer a:hover{
   font-family: NavBarFont;
   src: url("../fonts/Dosis-SemiBold.ttf");
 }
-.github{
+.github a{
   text-align: center;
   padding: 25px 20px;
+  text-decoration: red;
 }
