@@ -23,7 +23,7 @@ user = 'RapelangLepeli'
                 listrepos.appendChild(listItemRepo)
                 hlink = document.createElement('a')
                 listItemRepo.appendChild(hlink)
-                hlink.textContent = `|Name: ${v.name}| Description: ${v.description} | Stars: ${v.watchers}`
+                hlink.textContent = `|Name: ${v.name}           | Description: ${v.description}          | Stars: ${v.watchers}`
                 hlink.href = v.html_url
             })
         })
