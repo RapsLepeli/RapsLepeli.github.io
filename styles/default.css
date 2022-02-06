@@ -39,26 +39,34 @@ a:hover{
   margin:auto;
   text-align: center;
   color: red;
-  
+  font-size: 40px;
   padding-bottom: 30px;
+}
+.alert:hover{
+  color: yellow;
 }
 
 .intro_heading{
   text-align: center;
   font-size: 65px;
   margin: 25px 15px;
- 
+  text-decoration: underline;
 }
 h2{
   font-size: 45px;
+  text-decoration: underline;
 }
 .intro_par{
   font-size: 28px;
   margin: 20px 15px;
  
 }
+h2#welcome{
+  margin-bottom: 30px;
+}
 li{
   list-style: none;
+  font-size: 28px;
 }
 .socials a{
   margin: 33px 33px;
@@ -181,4 +189,17 @@ tr#record:hover {
 }
 tr#record:nth-child(even){
   background-color: #47555E;
+}
+
+div#ventures{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+ul#ventures-lists li{
+  text-align: left;
+  justify-content: left;
+  margin-left:80px ;
+  list-style:disc;
 }
