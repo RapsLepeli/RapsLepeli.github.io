@@ -146,11 +146,39 @@ li{
   text-decoration: red;
 
 }
-table, th  {
-  border: 1px solid black;
-}
+
 @media screen and (min-height:1200px) {
   .body{
     background-color: red;
   }
+}
+
+table  {
+  border: 5px solid grey;
+  border-radius: 2px;
+}
+table{
+  width: 100%;
+}
+th {
+  font-size: 30px;
+  columns: 1;
+}
+th#top-border{
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+td{
+  text-align: left;
+  font-size: 20px;
+}
+
+td#center{
+  text-align: center;
+}
+tr#record:hover {
+  background-color: #47555E;
+}
+tr#record:nth-child(even){
+  background-color: #47555E;
 }
