@@ -26,11 +26,14 @@ a:hover{
 
 .intro_heading{
   text-align: center;
-  
+  font-size: 65px;
   margin: 25px 15px;
 }
+h2{
+  font-size: 45px;
+}
 .intro_par{
-  font-size: 25px;
+  font-size: 28px;
   margin: 20px 15px;
 
 }
@@ -70,7 +73,7 @@ li{
 .footer a:hover{
   color: grey;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   .intro_heading{
     font-size: 40px;
   }
@@ -82,7 +85,7 @@ li{
   }
 
 }
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 425px) {
   .intro_heading{
     font-size: 30px;
   }
@@ -93,7 +96,7 @@ li{
     font-size: 24px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 350px) {
   .intro_heading{
     font-size: 20px;
   }
@@ -113,4 +116,7 @@ li{
   text-align: center;
   padding: 25px 20px;
   text-decoration: red;
+}
+table, th  {
+  border: 1px solid black;
 }
