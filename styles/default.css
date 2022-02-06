@@ -3,8 +3,17 @@
     padding: 0;
     border:none;
     font-family: NavBarFont;
-    background-color: #eee;
+   
 }
+.content{
+  background-color: #eee;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
 
 a{
   text-decoration: none;
@@ -22,6 +31,7 @@ a:hover{
   margin:auto;
   text-align: center;
   color: red;
+  padding-top: 30px;
 }
 
 .intro_heading{
@@ -35,14 +45,12 @@ h2{
 .intro_par{
   font-size: 28px;
   margin: 20px 15px;
-
 }
 li{
   list-style: none;
 }
-
 .socials a{
-  margin: 30px 20px;
+  margin: 30px 30px;
   color: black;
   font-size: 40px;
 }
@@ -54,7 +62,7 @@ li{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: white;
+ 
   color: black;
   text-align: center;
   padding-top: 30px;
