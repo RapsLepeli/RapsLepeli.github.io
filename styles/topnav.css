@@ -3,6 +3,9 @@
   overflow: hidden;
   
 }
+a#logo{
+  padding-left:10px ;
+}
 
 .topnav a{
     float: left;
@@ -12,6 +15,10 @@
     text-decoration: none;
     padding: 18px 20px;
     font-size: 45px;  
+}
+
+a#logo{
+  padding-left:10px ;
 }
 .topnav a:hover{
   transition-delay: 0.05s;

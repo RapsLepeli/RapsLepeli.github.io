@@ -123,25 +123,40 @@ li{
 
 }
 @media screen and (max-width: 425px) {
-  .intro_heading{
+  .intro_heading, h1{
     font-size: 30px;
   }
-  .intro_par{
+  .intro_par, p{
     font-size: 16px;
   }
   .intro_footer{
     font-size: 24px;
   }
+  th {
+    font-size: 16px;
+  }
+  td{
+    text-align: left;
+    font-size: 11px;
+  }
+
 }
 @media screen and (max-width: 350px) {
-  .intro_heading{
+  .intro_heading, h1{
     font-size: 20px;
   }
-  .intro_par{
+  .intro_par, h1{
     font-size: 14px;
   }
   .intro_footer{
     font-size: 21px;
+  }
+  th {
+    font-size: 9px;
+  }
+  td{
+    text-align: left;
+    font-size: 7px;
   }
 }
 @font-face {
@@ -166,7 +181,7 @@ table  {
   border-radius: 2px;
 }
 table{
-  width: 100%;
+  width: 100%; 
 }
 th {
   font-size: 30px;
@@ -200,6 +215,6 @@ div#ventures{
 ul#ventures-lists li{
   text-align: left;
   justify-content: left;
-  margin-left:80px ;
+  margin-left:30px ;
   list-style:disc;
 }
