@@ -46,7 +46,7 @@ a:hover{
   color: yellow;
 }
 
-.intro_heading{
+.intro_heading,h1{
   text-align: center;
   font-size: 65px;
   margin: 25px 15px;
@@ -56,7 +56,7 @@ h2{
   font-size: 45px;
   text-decoration: underline;
 }
-.intro_par{
+.intro_par,p{
   font-size: 28px;
   margin: 20px 15px;
  
@@ -217,4 +217,38 @@ ul#ventures-lists li{
   justify-content: left;
   margin-left:30px ;
   list-style:disc;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 #90B8F8;
+  max-width: 400px;
+  text-align: center;
+  margin: 12px;
+}
+.language{
+  color: grey;
+  font-size:22px;
+}
+.card button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  width:100%;
+  font-size: 18px;
+
+}
+.card button:hover{
+  opacity: 0.7;
+}
+
+div#cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h3{
+  font-size: 30px;
+  text-decoration: underline;
 }
