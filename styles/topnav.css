@@ -7,7 +7,7 @@
 .topnav a{
     float: left;
     display: block;
-    color: rgb(5, 5, 5);
+    color: #C7BEA2;
     text-align: center;
     text-decoration: none;
     padding: 18px 20px;
@@ -27,11 +27,12 @@
 .topnav a#contact{
   float: right;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 689px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
+      transition: 1s;
     }
   }
   @media screen and (max-width: 600px) {
