@@ -252,3 +252,10 @@ h3{
   font-size: 30px;
   text-decoration: underline;
 }
+button#btnRepos{
+  background-color: red;
+  font-size: 30px;
+}
+div .card a{
+  font-size: 30px;
+}

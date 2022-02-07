@@ -13,53 +13,34 @@ async function getRepos(){
 
     console.log(result);
     
-    for (let index = 0; index < 1; index++) {
+    for (let index = 0; index < 9; index++) {
 
         const element = result[index];
-
-        const nameHeader = document.getElementById("pname")
+        let counter = index + 1;
+        const nameHeader = document.getElementById("pname" + counter)
         nameHeader.textContent = element.name;
 
-        const langparagraph = document.getElementById("planguage");
+        const langparagraph = document.getElementById("planguage" + counter);
         langparagraph.textContent = element.language;
 
-        const dateparagraph = document.getElementById("pdate");
+        const dateparagraph = document.getElementById("pdate" + counter);
         const date = (element.created_at).split("T")[0];
         dateparagraph.textContent = date;
 
-        const desparagraph = document.getElementById("pdescription");
-        const shortDesc = (element.description).substring(0,120) + "...";
-        desparagraph.textContent = shortDesc;
+        const desparagraph = document.getElementById("pdescription" + counter);
+        desparagraph.textContent = element.description;
+        
+        /*if(element.description == "" || element == null){
+            desparagraph.textContent = element.description;
+        }else{
+            const shortDesc = (element.description).substring(0,120) + "...";
+            desparagraph.textContent = shortDesc;
+        }*/
+        
 
-        const linkparagraph = document.getElementById("pdescription");
+        const linkparagraph = document.getElementById("plink" + counter);
         linkparagraph.href = element.html_url;
 
-
-
-
-
-
-        //console.log(element);
-
-        const breakline = document.createElement("br");
-
-        const name = document.createElement("h3");
-        name.textContent = element.name;
-        divResult.appendChild(name);
-        divResult.appendChild(breakline);
-
-        console.log(element.name);
-
-        const id = document.createElement("h3");
-        id.textContent = element.id;
-        divResult.appendChild(breakline);
-
-        console.log(element.id);
-        console.log(element.language);
-        console.log(element.description);     
-        console.log(element.created_at);
-        console.log(element.html_url);
-        
 
 
     }
