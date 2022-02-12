@@ -58,8 +58,6 @@ h2{
 }
 .intro_par,p{
   font-size: 24px;
-  margin: 20px 15px;
- 
 }
 h2#welcome{
   margin-bottom: 30px;
@@ -86,32 +84,6 @@ li{
   color: #90B8F8;
  
 }
-
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: black;
-  background-color: #C7BEA2;;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-.footer a{
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-bottom: 10px;
-  color: #131617;
-  font-size: 30px;
-}
-
-.footer a:hover{
-  color: grey;
-}
-
-
 @media screen and (max-width: 550px) {
   .intro_heading{
     font-size: 40px;
@@ -175,7 +147,6 @@ li{
   text-align: center;
   padding: 25px 20px;
   text-decoration: red;
-
 }
 
 table  {
@@ -212,8 +183,6 @@ div#ventures{
   padding-top: 10px;
   padding-bottom: 20px;
 }
-
-
 ul#ventures-lists li{
   text-align: left;
   justify-content: left;
@@ -239,7 +208,6 @@ ul#ventures-lists li{
   cursor: pointer;
   width:100%;
   font-size: 18px;
-
 }
 .card button:hover{
   opacity: 0.7;
@@ -263,4 +231,30 @@ div .card a{
 }
 iframe{
   height: 600px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  background-color: #C7BEA2;;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.footer a{
+  color: #131617;
+  font-size: 30px;
+}
+.footer p{
+  font-size: 20px;
+}
+.footer .copyright{
+  float: left;
+}
+footer .version{
+  float: right;
+}
+.footer a:hover{
+  color: grey;
 }
