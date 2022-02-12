@@ -57,7 +57,7 @@ h2{
   text-decoration: underline;
 }
 .intro_par,p{
-  font-size: 20px;
+  font-size: 24px;
   margin: 20px 15px;
  
 }
@@ -66,7 +66,7 @@ h2#welcome{
 }
 li{
   list-style: none;
-  font-size: 20px;
+  font-size: 24px;
 }
 .socials a{
   margin: 33px 33px;
@@ -161,6 +161,12 @@ li{
     font-size: 7px;
   }
 }
+@media screen and (min-height:1200px) {
+  .body{
+    background-color: red;
+  }
+}
+
 @font-face {
   font-family: NavBarFont;
   src: url("../fonts/Dosis-SemiBold.ttf");
@@ -170,12 +176,6 @@ li{
   padding: 25px 20px;
   text-decoration: red;
 
-}
-
-@media screen and (min-height:1200px) {
-  .body{
-    background-color: red;
-  }
 }
 
 table  {
