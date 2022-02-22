@@ -141,7 +141,7 @@ li{
 
 @font-face {
   font-family: NavBarFont;
-  src: url("../fonts/Inconsolata-Medium.ttf");
+  src: url("../fonts/UbuntuMono-Regular.ttf");
 }
 .github a{
   text-align: center;
