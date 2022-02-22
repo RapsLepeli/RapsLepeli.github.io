@@ -141,7 +141,7 @@ li{
 
 @font-face {
   font-family: NavBarFont;
-  src: url("../fonts/Dosis-SemiBold.ttf");
+  src: url("../fonts/Inconsolata-Medium.ttf");
 }
 .github a{
   text-align: center;
