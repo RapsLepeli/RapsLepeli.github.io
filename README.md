@@ -15,3 +15,6 @@ local deployment.
 
 
 or just visit https://rapslepeli.pages.dev/ to view the latest version of the website⭐
+
+With regard to the software page, if, for some reason you want to create the same thing(fetching your repos from github),
+change the onst url = "https://api.github.com/users/[USERNAME]/repos"; int the git.js by inserting your actual username.
