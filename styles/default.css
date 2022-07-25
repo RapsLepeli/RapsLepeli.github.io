@@ -84,6 +84,11 @@ li{
   color: #90B8F8;
  
 }
+
+
+
+
+
 @media screen and (max-width: 550px) {
   .intro_heading{
     font-size: 40px;
@@ -94,8 +99,20 @@ li{
   .intro_footer{
     font-size: 27px;
   }
-
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    background-color: #C7BEA2;;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  table{
+    width: 50%; 
+  }
 }
+
 @media screen and (max-width: 425px) {
   .intro_heading, h1{
     font-size: 30px;
@@ -113,8 +130,20 @@ li{
     text-align: left;
     font-size: 11px;
   }
-
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    background-color: #C7BEA2;;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  table{
+    width: 50%; 
+  }
 }
+
 @media screen and (max-width: 350px) {
   .intro_heading, h1{
     font-size: 20px;
@@ -132,17 +161,40 @@ li{
     text-align: left;
     font-size: 7px;
   }
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    background-color: #C7BEA2;;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }  
+  table{
+    width: 50%; 
+  }
 }
+
 @media screen and (min-height:1200px) {
   .body{
     background-color: red;
   }
 }
 
+
+
+
+/*Font*/
 @font-face {
   font-family: SiteFont;
   src: url("../fonts/UbuntuMono-Regular.ttf");
 }
+
+
+
+
+
+
 .github a{
   text-align: center;
   padding: 25px 20px;
@@ -238,6 +290,7 @@ iframe{
 }
 
 .footer {
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
