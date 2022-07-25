@@ -1,4 +1,4 @@
-const url = "https://api.github.com/users/RapelangLepeli/repos";
+const url = "https://api.github.com/users/RapsLepeli/repos";
 
 
 window.onload = getRepos();
