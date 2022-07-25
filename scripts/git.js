@@ -1,11 +1,9 @@
 const url = "https://api.github.com/users/RapelangLepeli/repos";
 
-const btnRepos = document.getElementById("btnRepos");
 
-const divResult = document.getElementById("btnRepos");
-btnRepos.addEventListener("click",getRepos)
+window.onload = getRepos();
 
-//
+// getRepos
 async function getRepos(){
     
     const response = await fetch(url);
@@ -36,7 +34,6 @@ async function getRepos(){
             const shortDesc = (element.description).substring(0,120) + "...";
             desparagraph.textContent = shortDesc;
         }*/
-        
 
         const linkparagraph = document.getElementById("plink" + counter);
         linkparagraph.href = element.html_url;
@@ -45,11 +42,6 @@ async function getRepos(){
 
     }
 }
-
-
-
-
-
 
 /*user = 'RapelangLepeli'
         apirepo = `https://api.github.com/users/${user}`
@@ -81,3 +73,5 @@ async function getRepos(){
             })
         })
 */
+
+
