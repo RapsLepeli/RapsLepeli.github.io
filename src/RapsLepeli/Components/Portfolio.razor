@@ -1,0 +1,37 @@
+@inject HttpClient Http
+@inject HeroImageService HeroImageService
+@inject GitHubService GitHubService
+@using RapsLepeli.Models;
+@using RapsLepeli.Services;
+
+<div class="portfolio-grid">
+    @foreach (var project in projects)
+    {
+        <div class="project-card">
+            <h3>
+                <a href="@project.HtmlUrl"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    @project.Name
+                </a>
+            </h3>
+
+            <p>@project.Description</p>
+
+            <div class="project-footer">
+                <span>💻 @project.Language</span>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private List<GitHubRepo>? projects;
+    private HeroImage? hero;
+
+    protected override async Task OnInitializedAsync()
+    {
+        projects = await GitHubService.GetReposAsync();
+        hero = await HeroImageService.GetHeroAsync(img => img.Name is "portfolio");
+    }
+}
