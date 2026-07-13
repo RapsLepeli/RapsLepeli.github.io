@@ -1,0 +1,72 @@
+@page "/blog/{Slug}"
+
+@using Markdig
+@using Microsoft.AspNetCore.Components
+@using RapsLepeli.Models
+@using RapsLepeli.Services
+
+@inject BlogService BlogService
+
+<PageTitle>@(Post?.Title ?? "Blog")</PageTitle>
+
+@if (Post is null)
+{
+    <section class="blog-loading">
+
+        <h2>Loading article...</h2>
+
+    </section>
+}
+else
+{
+    <section class="blog-article">
+
+        <header class="blog-header">
+
+            <p class="blog-meta">
+                @Post.Published.ToString("dd MMMM yyyy")
+                •
+                @Post.ReadingTime
+            </p>
+
+            <h1>@Post.Title</h1>
+
+            <p class="blog-summary">
+                @Post.Summary
+            </p>
+
+        </header>
+
+        <article class="blog-content">
+
+            @((MarkupString)HtmlContent)
+
+        </article>
+
+    </section>
+}
+
+@code {
+
+    [Parameter]
+    public string Slug { get; set; } = string.Empty;
+
+    private BlogPost? Post;
+
+    private string HtmlContent = string.Empty;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        var posts = await BlogService.GetPostsAsync();
+
+        Post = posts.FirstOrDefault(p => p.Slug == Slug);
+
+        if (Post is null)
+            return;
+
+        var markdown = await BlogService.GetMarkdownAsync(Post.File);
+
+        HtmlContent = Markdown.ToHtml(markdown);
+    }
+
+}

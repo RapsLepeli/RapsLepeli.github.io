@@ -1,0 +1,23 @@
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:.9rem 1.8rem;
+    border-radius:999px;
+    font-weight:600;
+    transition:var(--transition);
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid var(--border);
+}

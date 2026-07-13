@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Rebuilding My Portfolio with Blazor",
+    "slug": "rebuilding-my-portfolio-with-blazor",
+    "summary": "Why I decided to rebuild my HTML, CSS and JavaScript portfolio using Blazor.",
+    "published": "2026-07-11T14:00:00",
+    "readingTime": "8 min read",
+    "tags": [
+      "Blazor",
+      ".NET",
+      "Portfolio"
+    ],
+    "file": "blog/posts/rebuilding-my-portfolio-with-blazor.md"
+  },{
+  "title": "My Learning Roadmap to Cloud, AI and Full Stack Expertise",
+  "slug": "my-learning-roadmap-to-cloud-ai-and-full-stack-expertise",
+  "summary": "A detailed roadmap of the certifications, technologies, and projects I plan to pursue as I grow into a Cloud, AI, and Full Stack Engineer.",
+  "published": "2026-07-13T10:00:00",
+  "readingTime": "10 min read",
+  "tags": [
+    "Career",
+    "Azure",
+    ".NET",
+    "AI",
+    "DevOps",
+    "Learning"
+  ],
+  "file": "blog/posts/my-learning-roadmap.md"
+}
+]

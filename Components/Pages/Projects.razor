@@ -1,0 +1,97 @@
+@page "/projects"
+@using RapsLepeli.Services
+@using RapsLepeli.Models
+
+@inject GitHubService GitHubService
+
+<PageTitle>Projects</PageTitle>
+
+<section class="projects">
+
+    <div class="projects-header">
+
+        <p class="section-tag">🚀 My Work</p>
+
+        <h1>Projects</h1>
+
+        <p class="section-description">
+            Here are some of the applications, tools and experiments I've built.
+            These projects showcase my experience with .NET, Blazor, Angular,
+            Azure, SQL Server and modern web technologies.
+        </p>
+
+    </div>
+
+    @if (projects == null)
+    {
+        <div class="loading">
+            Loading projects...
+        </div>
+    }
+    else
+    {
+        <div class="project-grid">
+
+            @foreach (var project in projects)
+            {
+                <article class="project-card">
+
+                    <h2>@project.Name</h2>
+
+                    <p>
+                        @(string.IsNullOrWhiteSpace(project.Description)
+                            ? "No description available."
+                            : project.Description)
+                    </p>
+
+                    <div class="project-meta">
+
+                        @if (!string.IsNullOrWhiteSpace(project.Language))
+                        {
+                            <span>💻 @project.Language</span>
+                        }
+
+                        <span>⭐ @project.Stars</span>
+
+                        <span>📅 @project.UpdatedAt.ToString("MMM yyyy")</span>
+
+                    </div>
+
+                    @if (project.Topics.Any())
+                    {
+                        <div class="topics">
+
+                            @foreach (var topic in project.Topics)
+                            {
+                                <span class="topic">@topic</span>
+                            }
+
+                        </div>
+                    }
+
+                    <a href="@project.HtmlUrl"
+                       target="_blank"
+                       class="project-button">
+
+                        View on GitHub →
+
+                    </a>
+
+                </article>
+            }
+
+        </div>
+    }
+
+</section>
+
+@code{
+
+    private List<GitHubRepo>? projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        projects = await GitHubService.GetReposAsync();
+    }
+
+}

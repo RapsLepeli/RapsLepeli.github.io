@@ -1,0 +1,188 @@
+.blog-article {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 5rem 1.5rem 7rem;
+
+}
+
+.blog-header {
+
+    margin-bottom: 3rem;
+
+}
+
+.blog-meta {
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+
+}
+
+.blog-header h1 {
+
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 1rem;
+
+}
+
+.blog-summary {
+
+    font-size: 1.2rem;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+}
+
+.blog-content {
+
+    line-height: 1.9;
+
+    font-size: 1.08rem;
+
+}
+
+.blog-content h2 {
+
+    margin-top: 3rem;
+
+    margin-bottom: 1rem;
+
+    font-size: 2rem;
+
+}
+
+.blog-content h3 {
+
+    margin-top: 2rem;
+
+}
+
+.blog-content p {
+
+    margin: 1.3rem 0;
+
+}
+
+.blog-content ul {
+
+    padding-left: 1.5rem;
+
+    margin: 1.5rem 0;
+
+}
+
+.blog-content li {
+
+    margin-bottom: .75rem;
+
+}
+
+.blog-content img {
+
+    width: 100%;
+
+    border-radius: 12px;
+
+    margin: 2rem 0;
+
+}
+
+.blog-content pre {
+
+    background: #161b22;
+
+    color: white;
+
+    padding: 1.25rem;
+
+    border-radius: 12px;
+
+    overflow-x: auto;
+
+    margin: 2rem 0;
+
+}
+
+.blog-content code {
+
+    font-family: Consolas, monospace;
+
+}
+
+.blog-loading {
+
+    text-align: center;
+
+    padding: 6rem;
+
+}
+
+@media (max-width: 768px) {
+
+    .blog-article {
+
+        padding: 4rem 1rem 6rem;
+
+    }
+
+}
+
+/* ---------- Tables ---------- */
+
+.blog-content table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 2.5rem auto;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    border: 1px solid var(--border);
+
+}
+
+.blog-content thead {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+.blog-content th,
+.blog-content td {
+
+    padding: 1rem 1.25rem;
+
+    text-align: left;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.blog-content tbody tr:nth-child(even) {
+
+    background: rgba(255,255,255,.03);
+
+}
+
+.blog-content tbody tr:hover {
+
+    background: rgba(255,255,255,.06);
+
+}

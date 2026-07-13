@@ -1,0 +1,90 @@
+@page "/blog"
+
+@using RapsLepeli.Models
+@using RapsLepeli.Services
+
+@inject BlogService BlogService
+
+<PageTitle>Blog</PageTitle>
+
+<section class="blog">
+
+    <div class="blog-header">
+
+        <p class="section-tag">BLOG</p>
+
+        <h1>Sharing What I Learn</h1>
+
+        <p class="section-description">
+            I enjoy documenting my journey as a .NET developer, from building
+            applications with Blazor and ASP.NET Core to exploring Azure,
+            software architecture, and AI. These articles capture what I learn,
+            the challenges I solve, and the lessons I pick up along the way.
+        </p>
+
+    </div>
+
+    @if (posts is null)
+    {
+        <p class="loading">Loading articles...</p>
+    }
+    else if (!posts.Any())
+    {
+        <p class="loading">No blog posts yet.</p>
+    }
+    else
+    {
+        <div class="blog-grid">
+
+            @foreach (var post in posts)
+            {
+                <article class="blog-card">
+
+                    <div class="blog-meta">
+
+                        <span>@post.Published</span>
+
+                        <span>•</span>
+
+                        <span>@post.ReadingTime</span>
+
+                    </div>
+
+                    <h2>@post.Title</h2>
+
+                    <p>@post.Summary</p>
+
+                    <div class="blog-tags">
+
+                        @foreach (var tag in post.Tags)
+                        {
+                            <span class="tag">@tag</span>
+                        }
+
+                    </div>
+
+                    <a class="read-more"
+                       href="/blog/@post.Slug">
+
+                        Read Article →
+
+                    </a>
+
+                </article>
+            }
+
+        </div>
+    }
+
+</section>
+
+@code {
+
+    private List<BlogPost>? posts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await BlogService.GetPostsAsync();
+    }
+
+}

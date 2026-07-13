@@ -1,0 +1,55 @@
+﻿@inject NavigationManager Nav
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="/" class="logo">
+            Raps<span> Lepeli</span>
+        </a>
+
+        <button class="menu-button"
+                @onclick="ToggleMenu">
+
+            <i class="bi @(menuOpen ? "bi-x-lg" : "bi-list")"></i>
+
+        </button>
+
+        <nav class="nav-links @(menuOpen ? "open" : "")">
+
+            <NavLink href="/" Match="NavLinkMatch.All">
+                Home
+            </NavLink>
+
+            <NavLink href="/about">
+                About
+            </NavLink>
+
+            <NavLink href="/projects">
+                Projects
+            </NavLink>
+
+            <NavLink href="/blog">
+                Blog
+            </NavLink>
+
+            <NavLink href="/contact">
+                Contact
+            </NavLink>
+
+        </nav>
+
+    </div>
+
+</header>
+
+@code{
+
+    bool menuOpen;
+
+    void ToggleMenu()
+    {
+        menuOpen = !menuOpen;
+    }
+
+}
