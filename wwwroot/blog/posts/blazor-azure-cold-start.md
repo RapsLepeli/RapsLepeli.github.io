@@ -113,18 +113,20 @@ Considering it costs **nothing**, it's an excellent environment for experimentat
 
 ## Cold Start Summary
 
-| Stage | What Happens |
-|--------|--------------|
-| 👤 Visitor | Opens the portfolio |
-| ☁️ Azure | Detects the application is sleeping |
-| ⚙️ Runtime | Starts ASP.NET Core |
-| 🔧 Services | Dependency Injection is initialized |
-| 🧭 Pipeline | Middleware and routing are configured |
-| 🚀 Blazor | Application begins rendering |
-| 📄 Browser | First page is returned |
-| ⚡ Future Requests | Fast until Azure unloads the application again |
+    | Stage           | What Happens |
+    |-----------------|------------- |
+    | Visitor         | Opens the portfolio |
+    | Azure           | Detects the application is sleeping |
+    | ASP.NET Core    | Starts the runtime |
+    | Services        | Initializes Dependency Injection |
+    | Middleware      | Configures the request pipeline |
+    | Blazor          | Renders the application |
+    | Browser         | Receives the first page |
+    | Future Requests | Fast until Azure unloads the application again |
+
 
 ---
+The application then remains responsive until Azure puts it back to sleep.
 
 ## Possible Solutions
 
@@ -270,17 +272,17 @@ Rather than implementing every Azure service immediately, I want each addition t
 
 The technologies below are part of my current learning roadmap and **have not yet been implemented**. As I complete my studies and hands-on projects, I'll integrate each one into this portfolio and document the experience through future blog posts.
 
-| Technology | Status |
-|------------|--------|
-| Azure App Service | ✅ Currently hosting this portfolio |
-| GitHub Actions CI/CD | ✅ Currently used for deployment |
-| Azure Application Insights | 🔄 Learning & implementing soon |
-| Azure Front Door | 📚 Planned |
-| Azure CDN | 📚 Planned |
-| Azure Container Apps | 📚 Planned |
-| Docker | 📚 Planned |
-| Azure Kubernetes Service (AKS) | 📚 Planned |
-| Azure DevOps | 📚 Planned |
+    | Technology                     | Status    |
+    |--------------------------------|---------------|
+    | Azure App Service              | ✅ Currently hosting this portfolio |
+    | GitHub Actions CI/CD           | ✅ Currently used for deployment |
+    | Azure Application Insights     | 🔄 Learning & implementing soon |
+    | Azure Front Door               | 📚 Planned |
+    | Azure CDN                      | 📚 Planned |
+    | Azure Container Apps           | 📚 Planned |
+    | Docker                         | 📚 Planned |
+    | Azure Kubernetes Service (AKS) | 📚 Planned |
+    | Azure DevOps                   | 📚 Planned |
 
 My goal isn't simply to earn certifications, it's to understand when each Azure service should be used, why it exists, and how it improves the scalability, security, reliability, and maintainability of real-world applications.
 
