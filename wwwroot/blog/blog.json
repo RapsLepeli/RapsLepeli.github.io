@@ -26,5 +26,20 @@
     "Learning"
   ],
   "file": "blog/posts/my-learning-roadmap.md"
+},
+{
+  "title": "Why My Blazor Portfolio Has a Cold Start on Azure",
+  "slug": "blazor-azure-cold-start",
+  "summary": "A look into Azure App Service cold starts, why my Blazor portfolio sometimes loads slowly, and the different ways to solve it.",
+  "published": "2026-07-14T12:00:00",
+  "readingTime": "7 min read",
+  "tags": [
+    "Azure",
+    "Blazor",
+    "Performance",
+    "Cloud",
+    ".NET"
+  ],
+  "file": "blog/posts/blazor-azure-cold-start.md"
 }
 ]
